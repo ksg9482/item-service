@@ -36,7 +36,7 @@ public class ItemRepository {
     //도메인 객체를 그대로 쓰다보니 setId 처럼 도메인 모델중 안쓰는데 접근 가능한 부분이 생긴다.
     public void update(Long itemId, Item updateParam){
         Item findItem = findById(itemId);
-        findItem.setName(updateParam.getName());
+        findItem.setItemName(updateParam.getItemName());
         findItem.setPrice(updateParam.getPrice());
         findItem.setQuantity(updateParam.getQuantity());
     }

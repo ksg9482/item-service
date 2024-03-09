@@ -9,7 +9,7 @@ import lombok.Setter;
 //@Getter @Setter
 public class Item {
     private Long id;
-    private String name;
+    private String itemName;
     // Integer를 쓰는 이유: 값이 안들어 갈 수 있기때문. null을 넣어야 할지도 모른다. null은 0과 다르다
     private Integer price;
     private Integer quantity;
@@ -19,8 +19,8 @@ public class Item {
     }
 
     //id를 제외한 생성자
-    public Item(String name, Integer price, Integer quantity) {
-        this.name = name;
+    public Item(String itemName, Integer price, Integer quantity) {
+        this.itemName = itemName;
         this.price = price;
         this.quantity = quantity;
     }
